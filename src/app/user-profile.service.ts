@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers } from '@angular/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import 'rxjs/add/operator/map';
 
 @Injectable({
@@ -8,19 +8,22 @@ import 'rxjs/add/operator/map';
 export class UserProfileService {
 
   private username:string;
-  private repository: string;
   private access_token  = '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';
 
-  constructor(private ready:Http) {
+  constructor(private ready:HttpClient) {
     console.log("service is ready!");
     this.username = 'faithremo';
-    this.repository='';
   }
 
   getUserInfo(){
-    return this.ready.get("https://api.github.com/users/faithremo?access_token=' + apiKey" + this.username + this.repository)
+    return this.ready.get("https://api.github.com/users/" + this.username + "?access_token=" + this.access_token)
     .map(res => res.json());
     
+  }
+
+  getProfileRepos(){
+    return this.ready.get("https://api.github.com/users/" + this.username + "/repos?access_token=" + this.access_token)
+    .map(res => res.json());
   }
     
 }

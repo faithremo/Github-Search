@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { httpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
-import { UserProfileService } from 'user-profile/user-profile.component';
+
+import { UserProfileService } from './user-profile/user-profile.component';
 
 
 import { AppComponent } from './app.component';
@@ -12,10 +13,10 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
   declarations: [
     AppComponent,
     UserProfileComponent,
-    HttpModule
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [UserProfileService],
   bootstrap: [AppComponent]
