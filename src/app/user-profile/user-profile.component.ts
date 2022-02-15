@@ -10,9 +10,15 @@ import { UserProfileService } from '../user-profile.service';
 export class UserProfileComponent implements OnInit {
    userProfile:any[];
    repos: any[];
+  username: any;
 
   constructor(private UserProfileService: UserProfileService) {
-    this.UserProfileService.getUserInfo().subscribe(userProfile =>{
+    
+   }
+
+   findProfile(){
+     this.userProfileService.updateProfile (this.username);
+     this.UserProfileService.getUserInfo().subscribe(userProfile =>{
       console.log(userProfile);
       this.userProfile = userProfile;
     });
