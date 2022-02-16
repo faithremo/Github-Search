@@ -1,7 +1,47 @@
 .search-form{
     padding-top: 50px;
 }
+
 h1{
     color: white;
     background-color: black;
+    text-align: center;
+}
+
+.search-bar input{
+    width: 75%;
+}
+
+form{
+    background-color: #2fdfb3;
+    padding: 80px
+}
+
+.label-default{
+    background-color: #8b8888;
+}
+
+.label-primary{
+    background-color: #3a5b77;
+}
+
+.label-success{
+    background-color: #54a554;
+}
+
+.label-info{
+    background-color: #50abc7;
+}
+
+.label{
+    margin-right: 5px;
+    padding: 3px;
+}
+
+.panel-title{
+    background-color: #e0d7d7
+}
+
+img{
+    border-radius: 50%;
 }
