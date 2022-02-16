@@ -23,6 +23,27 @@
                          <li class="list-group-item" *ngIf="userProfile.email"> <a href="emailto:{{userProfile.email}}"> {{userProfile.email}}</a> </li>
                      </ul>
                  </div>
+                 <div class="col">
+                     <p>
+                         <span class="label label-default">{{userProfile.followers}} Followers</span>
+                         <span class="label label-primary">{{userProfile.following}} Following</span>
+                         <span class="label label-success">{{userProfile.public_gists}} Public gists</span> <br>
+                         <span class="label label-info">{{userProfile.public_repos}} ublic Repos</span>
+                     </p>
+                     <p> <a href="{{userProfile.html_url}}" target="blank" class="btn-success btn-sm">View user profile on github</a></p>
+                     <div class="panel panel-default">
+                         <div class="panel-heading">
+                             <h3 class="panel-title">Repos</h3> <hr>
+                         </div>
+                         <div class="panel-body" *ngFor="let repo of repos">
+                             <p class="clearfix">{{repo.name}}
+                                 <a href="{{repo.html_url}}" target="blank" class="btn btn-sm btn-warning pull-right">View Project on Github</a>
+                             </p>
+                             <p> {{repo.description}} </p>
+                         </div>
+                     </div>
+
+                 </div>
              </div>
          </div>
      </div>
