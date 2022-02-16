@@ -8,22 +8,22 @@ import { UserProfileService } from '../user-profile.service';
   styleUrls: ['./user-profile.component.css']
 })
 export class UserProfileComponent implements OnInit {
-   userProfile:any[];
-   repos: any[];
-  username: any;
+   userProfile:any;
+   repos: any;
+  username!: string;
 
   constructor(private UserProfileService: UserProfileService) {
     
    }
 
    findProfile(){
-     this.userProfileService.updateProfile (this.username);
-     this.UserProfileService.getUserInfo().subscribe(userProfile =>{
+     this.UserProfileService.updateProfile (this.username);
+     this.UserProfileService.getUserInfo().subscribe((userProfile: any) =>{
       console.log(userProfile);
       this.userProfile = userProfile;
     });
 
-    this.UserProfileService.getProfileRepos().subscribe(repos =>{
+    this.UserProfileService.getProfileRepos().subscribe((repos: any)=>{
       console.log(repos);
       this.repos = repos;
     })

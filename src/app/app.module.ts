@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 
 
-import { UserProfileService } from './user-profile/user-profile.component';
+import { UserProfileService } from './user-profile.service';
 
 
 import { AppComponent } from './app.component';
