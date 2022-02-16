@@ -7,7 +7,6 @@ import {FormsModule} from '@angular/forms';
 
 import { UserProfileService } from './user-profile.service';
 
-
 import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 
