@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { profile } from 'console';
+
 import { UserProfileService } from '../user-profile.service';
 
 @Component({
@@ -18,12 +18,12 @@ export class UserProfileComponent implements OnInit {
 
    findProfile(){
      this.UserProfileService.updateProfile (this.username);
-     this.UserProfileService.getUserInfo().subscribe((userProfile: any) =>{
+     this.UserProfileService.getUserInfo().subscribe(userProfile =>{
       console.log(userProfile);
       this.userProfile = userProfile;
     });
 
-    this.UserProfileService.getProfileRepos().subscribe((repos: any)=>{
+    this.UserProfileService.getProfileRepos().subscribe(repos =>{
       console.log(repos);
       this.repos = repos;
     })
@@ -33,7 +33,5 @@ export class UserProfileComponent implements OnInit {
   }
 
 }
-function userProfile(userProfile: any) {
-  throw new Error('Function not implemented.');
-}
+
 
