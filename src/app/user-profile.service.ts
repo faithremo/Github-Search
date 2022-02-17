@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
 })
 export class UserProfileService {
 
-  private username:string;
+  public username:string;
   private access_token  = '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';
   updateuserProfiles: any;
 
@@ -17,13 +17,13 @@ export class UserProfileService {
   }
 
   getUserInfo(){
-    return this.http.get("https://api.github.com/users/" + this.username + "?access_token=" + this.access_token)
+    return this.http.get("https://api.github.com/users/" + this.username )
     
     
   }
 
   getProfileRepos(){
-    return this.http.get("https://api.github.com/users/" + this.username + "/repos?access_token=" + this.access_token);
+    return this.http.get("https://api.github.com/users/" + this.username + "/access_token=" + this.access_token);
     map((res: { json: () => any}) => res.json());
   }
   getuserProfileRepos(){

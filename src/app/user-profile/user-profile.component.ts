@@ -10,17 +10,19 @@ import { UserProfileService } from '../user-profile.service';
 export class UserProfileComponent implements OnInit {
    userProfile:any;
    repos: any;
-  username!: string;
+  username: string="faithremo"
 
   constructor(private UserProfileService: UserProfileService) {
     
    }
 
    findProfile(){
-     this.UserProfileService.updateProfile (this.username);
+     this.UserProfileService.updateProfile(this.username);
+     console.log(this.UserProfileService.username)
      this.UserProfileService.getUserInfo().subscribe(userProfile =>{
       console.log(userProfile);
       this.userProfile = userProfile;
+      // console.log(this.username);
     });
 
     this.UserProfileService.getProfileRepos().subscribe(repos =>{
@@ -30,6 +32,7 @@ export class UserProfileComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    this.findProfile()
   }
 
 }

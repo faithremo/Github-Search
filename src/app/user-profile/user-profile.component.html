@@ -4,6 +4,7 @@
         <input type="text" class="form-control" placeholder="Search git username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
     </div>
  </form>
+ 
  <div *ngIf="userProfile" class="container">
      <div class="panel panel-default">
          <div class="panel-heading">
