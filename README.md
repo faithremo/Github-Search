@@ -5,7 +5,7 @@ It is an Angular App that allows users to search for people using github.
 faithremo.github.io/github-search/
 
 ## Date
-13/2/2020
+13/2/2022
 
 ## Setup/Installation Requirements
 
@@ -49,5 +49,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 ## Support and contact details
-email: faithmaumi@gmail.com 
+email: faithmaumi@gmail.com
+
+##
 Copyright (c) 2021 Faith Nduta
