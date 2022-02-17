@@ -33,9 +33,6 @@
                      </p>
                      <p> <a href="{{userProfile.html_url}}" target="blank" class="btn-success btn-sm">View user profile on github</a> <br> </p>
                      <div class="panel panel-default">
-                         <div class="panel-heading">
-                             <h3 class="panel-title">Repos</h3> <hr>
-                         </div>
                          <div class="panel-body" *ngFor="let repo of repos">
                              <p class="clearfix">{{repo.name}}
                                  <a href="{{repo.html_url}}" target="blank" class="btn btn-sm btn-warning pull-right">View Project on Github</a>

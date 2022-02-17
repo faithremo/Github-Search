@@ -59,4 +59,20 @@ form{
 
 img{
     border-radius: 50%;
+    width: 80%;
 }
+
+a:link, a:visited{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    border:2px solid rgb(12, 97, 12);
+    padding: 8px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    background-color: rgb(12, 97, 12);
+    color: white;
+  }
