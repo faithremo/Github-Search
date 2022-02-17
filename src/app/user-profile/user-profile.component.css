@@ -2,10 +2,17 @@
     padding-top: 50px;
 }
 
+.panel-body > .row{
+    align-items: center;
+    display: flex;   
+}
+
 h1{
     color: white;
     background-color: black;
     text-align: center;
+    padding: 20px;
+    margin-top: 0;
 }
 
 .search-bar input{
@@ -14,15 +21,23 @@ h1{
 
 form{
     background-color: #2fdfb3;
-    padding: 80px
+    padding: 80px;
 }
+
+.search-form .form-group input[type=text] {
+    float: left;
+    padding: 7px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+  }
 
 .label-default{
     background-color: #8b8888;
 }
 
 .label-primary{
-    background-color: #3a5b77;
+    background-color: #3978af;
 }
 
 .label-success{

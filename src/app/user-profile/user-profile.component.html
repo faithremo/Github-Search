@@ -1,4 +1,4 @@
-<h1>Search for Github Users</h1>
+<h1>Github User Search</h1>
 <form action="" class="search-form container">
     <div class="form-group">
         <input type="text" class="form-control" placeholder="Search git username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
@@ -28,10 +28,10 @@
                      <p>
                          <span class="label label-default">{{userProfile.followers}} Followers</span>
                          <span class="label label-primary">{{userProfile.following}} Following</span>
-                         <span class="label label-success">{{userProfile.public_gists}} Public gists</span> <br>
-                         <span class="label label-info">{{userProfile.public_repos}} ublic Repos</span>
+                         <span class="label label-success">{{userProfile.public_gists}} Public gists</span>
+                         <span class="label label-info">{{userProfile.public_repos}} Public Repos</span>
                      </p>
-                     <p> <a href="{{userProfile.html_url}}" target="blank" class="btn-success btn-sm">View user profile on github</a></p>
+                     <p> <a href="{{userProfile.html_url}}" target="blank" class="btn-success btn-sm">View user profile on github</a> <br> </p>
                      <div class="panel panel-default">
                          <div class="panel-heading">
                              <h3 class="panel-title">Repos</h3> <hr>
