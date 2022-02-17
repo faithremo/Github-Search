@@ -1,4 +1,23 @@
 # GithubSearch
+It is an Angular App that allows users to search for people using github.
+
+## Date
+13/2/2020
+
+## Setup/Installation Requirements
+
+Install Visual Studio
+Create a git-hub account
+code and deploy
+Keep the website in use
+
+## Bugs
+
+There are no known bugs.
+
+## Technologies Used
+
+HTML,CSS,javaScript,jQuery, Bootstrap,AngularJs
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.1.
 
@@ -25,3 +44,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Support and contact details
+email: faithmaumi@gmail.com 
+Copyright (c) 2021 Faith Nduta
