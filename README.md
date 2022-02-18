@@ -1,8 +1,8 @@
 # GithubSearch
 It is an Angular App that allows users to search for people using github.
 
-## Website
-faithremo.github.io/github-search/
+## Description 
+Website: https://faithremo.github.io/Github-Search/
 
 ## Date
 13/2/2022
